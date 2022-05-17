@@ -1,4 +1,5 @@
 import React from 'react'
+import ChatOnline from '../chatOnline/ChatOnline';
 import Groups from '../groups/Groups';
 import Message from '../message/Message';
 import './leftbar.css';
@@ -38,7 +39,9 @@ function LeftBar() {
             
         </div>
         <div  className='chatOnline'>
-        <div className="chatOnlineWrapper">Online</div>
+        <div className="chatOnlineWrapper">
+            <ChatOnline />
+        </div>
 
             
         </div>
