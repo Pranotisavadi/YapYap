@@ -1,4 +1,6 @@
 import React from 'react'
+import Groups from '../groups/Groups';
+import Message from '../message/Message';
 import './leftbar.css';
 
 function LeftBar() {
@@ -8,11 +10,30 @@ function LeftBar() {
         <div  className='chatMenu'>
         <div className="chatMenuWrapper">
         <input placeholder="Search for friends" className="chatMenuInput" />
+        <Groups />
         </div>
 
         </div>
         <div  className='chatBox'>
-        <div className="chatBoxWrapper">Box</div>
+        <div className="chatBoxWrapper">
+            <div className='chatBoxTop'>
+            <Message />
+            <Message own={true}/>
+            <Message />
+            <Message />
+            <Message />
+            <Message />
+            <Message />
+            <Message />
+            <Message />
+            </div>
+
+            <div className='chatBoxBottom'>
+            <textarea className='chatMessageInput' placeholder='Chat With YapYap . . .'></textarea>
+            <button className='chatSubmitButton'>Send</button>
+            </div>
+
+        </div>
 
             
         </div>
